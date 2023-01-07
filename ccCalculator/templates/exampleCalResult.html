@@ -1,0 +1,33 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div class="container">
+        <div style="margin-bottom: 10px">
+            <a class="btn btn-success" href="/">
+                <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                Back to Home
+            </a>
+            <a class="btn btn-success" href="/example">
+                <span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span>
+                New Cal
+            </a>
+        </div>
+{#        <div class="panel panel-danger">#}
+{#            <div class="panel-heading">#}
+{#                <h3 class="panel-title">EDFS2 System Message:</h3>#}
+{#            </div>#}
+{#            <div class="panel-body" aria-placeholder="No Message">#}
+{#                {{ msg }}#}
+{#            </div>#}
+{#        </div>#}
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title"> Result: </h3>
+            </div>
+
+            <div class="panel-body">
+                {{ result }}
+            </div>
+        </div>
+    </div>
+{% endblock %}

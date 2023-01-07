@@ -1,0 +1,27 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+    <div class="container">
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h3 class="panel-title">Let's do some addition! </h3>
+            </div>
+            <div class="panel-body">
+                <form method="post">
+                    {% csrf_token %}
+                    <div class="form-group">
+                        <label>Variable1:</label>
+                        <input type="text" class="form-control" placeholder="variable1" name="x1"/>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Variable2:</label>
+                        <input type="text" class="form-control" placeholder="variable2" name="x2"/>
+                    </div>
+                    <button type="submit" class="btn btn-primary">submit</button>
+                    <a href="/" class="btn btn-primary" role="button">cancel</a>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
