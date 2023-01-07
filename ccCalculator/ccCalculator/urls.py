@@ -21,4 +21,5 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.hellWorld),
     path('example', views.example),
+    path('cal1', views.cal1),
 ]
