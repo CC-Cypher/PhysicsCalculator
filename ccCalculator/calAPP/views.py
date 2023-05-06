@@ -1,12 +1,13 @@
 from django.shortcuts import render
-from phyMath.phyMath import phyMath
+from phyMath.phyMath import Bin2CSV
 
-m1 = phyMath()
+m1 = Bin2CSV('./Resources/test.bin')
 
 
 # Create your views here.
 def hellWorld(request):
     if request.method == 'GET':
+        m1.transform('./Result/test.txt')
         return render(request, 'helloworld.html')
 
 def example(request):
